@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="InnerFoco">
+    <meta name="keywords" content="produtividade, foco, TDAH, procrastinação, neurociência">
+    <meta name="description" content="Domine sua atenção, elimine a procrastinação e alcance produtividade máxima com técnicas cientificamente comprovadas">
+    <title>InnerFoco</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="img/InnerFoco-logo.jpeg" type="image/x-icon">
+    <style>
+        .lead, .texto-negrito{
+            font-weight: bold;
+        }
+        .caixa {
+	    padding: 60px 0;
+	    border-bottom: 1px solid #e5e5e5;
+        }
+
+        .navbar-collapse {
+            justify-content: flex-end;
+        }
+        .dropdown-menu {
+        max-height: 300px;
+        overflow-y: auto;
+    }
+    .dropdown-item:hover {
+        background-color: #e5e5e5;
+        color: black;
+    }
+    .dropdown-item-rodape:hover {
+        background-color: black;
+        color: #e5e5e5;
+    }
+    a:hover {
+        opacity: 1;
+    }
+        @media (max-width: 576px) {
+            .dropdown-menu {
+                background-color: transparent;
+                border: none;
+            }
+            .dropdown-item {
+                padding-left: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top texto-negrito">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid" width="120" src="img/InnerFoco-logo-Sem-Fundo.png" alt="Logo">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse p-4 text-uppercase" id="menu">
+                    <ul class="navbar-nav ms-auto nav-tabs">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="cursosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Indicações
+                            </a>
+                            <ul id="#indicacoes" class="dropdown-menu" aria-labelledby="cursosDropdown">
+                                <li><a class="dropdown-item" href="https://go.hotmart.com/K99560128C" target="_blank">Método FocusFlow</a></li>
+                                <li><a class="dropdown-item" href="https://go.hotmart.com/R64921265L" target="_blank">Fórmula negócio online</a></li>
+                                <li><a class="dropdown-item" href="https://go.hotmart.com/D99286293H" target="_blank">Desafio de produtividade</a></li>
+                                <li><a class="dropdown-item" href="https://d-tomasi.hotmart.host/homemdacasa?ref=B99285417T" target="_blank">Domine a Vida Adulta com um Cérebro Hiperativo</a></li>
+                                <li><a class="dropdown-item" href="https://go.hotmart.com/E69369711F" target="_blank">Inglês com a Gringa</a></li>
+                                <li><a class="dropdown-item" href="https://go.hotmart.com/X99518938A?dp=1" target="_blank">Adubação para Altas Produtividades</a></li>
+                                <li><a class="dropdown-item" href="https://go.hotmart.com/C99387265S" target="_blank">Alcateia Evolutiva</a></li>
+                                <li><a class="dropdown-item" href="https://go.hotmart.com/H99387236T" target="_blank">Método R & T com mindfulness</a></li>
+                                <li><a class="dropdown-item" href="https://go.hotmart.com/Y99286189F" target="_blank">Secando em casa</a></li>
+                                <li><a class="dropdown-item" href="https://go.hotmart.com/G99560608C" target="_blank">Método prosperidade e vida</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="cursosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                E-books
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="cursosDropdown">
+                                <li><a class="dropdown-item" href="https://amzn.to/44XEzrt" target="_blank">Mais rápido e melhor</a></li>
+                                <li><a class="dropdown-item" href="https://amzn.to/4iOhc7c" target="_blank">TDAH como lidar</a></li>
+                                <li><a class="dropdown-item" href="https://amzn.to/4iS9lWb" target="_blank">O poder do hábito</a></li>
+                                <li><a class="dropdown-item" href="https://amzn.to/42H9EOF" target="_blank">Mentes inquietas: TDAH</a></li>
+                                <li><a class="dropdown-item" href="https://amzn.to/3ROeUde" target="_blank">O milagre da manhã</a></li>
+                                <li><a class="dropdown-item" href="https://amzn.to/4d2zoZq" target="_blank">Hábitos atômicos</a></li>
+                                <li><a class="dropdown-item" href="https://amzn.to/4d10z6R" target="_blank">Vencendo o TDAH adulto</a></li>
+                                <li><a class="dropdown-item" href="https://amzn.to/430zTOO" target="_blank">Deep Work</a></li>
+                                <li><a class="dropdown-item" href="https://amzn.to/4iNEgTy" target="_blank">Mindset</a></li>
+                                <li><a class="dropdown-item" href="https://amzn.to/4k0fhx5" target="_blank">Destrave sua vida e saia do rascunho</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="ferramentas.html">Ferramentas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-1 mb-lg-0 d-flex flex-row">
+                        <li class="nav-item"><a class="nav-link px-2" href="https://www.instagram.com/innerfoco/" target="_blank"><i class="fs-4 fab fa-instagram"></i></a></li>
+                        <li class="nav-item"><a class="nav-link px-2" href="#" target="_blank"><i class="fs-4 fab fa-facebook"></i></a></li>
+                        <li class="nav-item"><a class="nav-link px-2" href="https://www.youtube.com/@InnerFoco" target="_blank"><i class="fs-4 fab fa-youtube"></i></a></li>
+                        <li class="nav-item"><a class="nav-link px-2" href="https://www.tiktok.com/@innerfoco?_t=ZM-8w4wGDwFtqx&_r=1" target="_blank"><i class="fs-4 fa-brands fa-tiktok"></i></a></li>
+                        <li class="nav-item"><a class="nav-link px-2" href="#" target="_blank"><i class="fs-4 fab fa-linkedin"></i></a></li>
+                        <li class="nav-item"><a class="nav-link px-2" href="#" target="_blank"><i class="fs-4 fab fa-twitter"></i></a></li>
+                        <li class="nav-item"><a class="nav-link px-2" href="https://web.whatsapp.com/" target="_blank"><i class="fs-4 fab fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="d-flex col-md-6">
+                        <div class="align-self-center">
+                            <h1 class="display-1">Desenvolva sua <span class="text-warning texto-negrito">Explosão de Foco</span></h1>
+                            <p class="lead">Estratégias reais para mentes criativas</p>
+                            <div class="texto-hero">
+                                <p>Aqui você encontrará métodos testados e recursos cuidadosamente selecionados para ajudar você a manter a concentração e aumentar sua produtividade no trabalho e estudos.</p>
+                                <p>Nossa abordagem é prática e humana, reconhecemos que manter o foco é um desafio real no mundo atual, e estamos aqui para oferecer soluções que realmente funcionam no dia a dia.</p>
+                                <div class="d-flex">
+                                    <a href="produtos.html" class="btn btn-outline-warning bg-light m-2 mb-2">Conheça Nossos Recursos</a>
+                                    <a class="btn btn-lg btn-outline-dark" href="https://www.youtube.com/@InnerFoco" target="_blank" rel="noopener">
+                                        Dicas de Produtividade
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid mt-5" src="img/1040.jpg" alt="capa-mulher">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="display-4">Como está seu <span class="text-warning fw-bold text-uppercase">humor</span> hoje?</h2>
+                    <p class="lead">Nos conte como você está se sentindo para receber conteúdo personalizado</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+                        <button class="btn btn-outline-dark btn-lg texto-negrito" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#feliz">
+                            <i class="far fa-smile me-2"></i>Feliz
+                        </button>
+                        <button class="btn btn-outline-dark btn-lg texto-negrito" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#normal">
+                            <i class="far fa-meh me-2"></i>Normal
+                        </button>
+                        <button class="btn btn-outline-dark btn-lg texto-negrito" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#triste">
+                            <i class="far fa-sad-tear me-2"></i>Triste
+                        </button>
+                        <button class="btn btn-outline-dark btn-lg texto-negrito" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#ansioso">
+                            <i class="fas fa-brain me-2"></i>Ansioso
+                        </button>
+                        <button class="btn btn-outline-dark btn-lg texto-negrito" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#desmotivado">
+                            <i class="far fa-tired me-2"></i>Desmotivado
+                        </button>
+                    </div>
+                    <div class="accordion" id="humorAccordion">
+                        <div class="collapse" id="feliz" data-bs-parent="#humorAccordion">
+                            <div class="alert alert-warning">
+                                <p class="mb-3 texto-negrito lead">Que incrível! Aproveite essa energia positiva para conquistar seus objetivos hoje! 🌟</p>
+                                <a href="https://youtu.be/YOEDkGBrUv4" target="_blank" class="btn btn-warning texto-negrito">
+                                    Assista a um vídeo para celebrar!
+                                </a>
+                            </div>
+                        </div>
+        
+                        <div class="collapse" id="normal" data-bs-parent="#humorAccordion">
+                            <div class="alert alert-warning">
+                                <p class="mb-3 texto-negrito lead">Tudo bem estar no meio-termo! Que tal um pequeno desafio para dar um up no seu dia? 💪</p>
+                                <a href="https://youtu.be/2u7Ik7_jfC4" target="_blank" class="btn btn-warning texto-negrito">
+                                    Vídeo motivacional rápido
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="collapse" id="triste" data-bs-parent="#humorAccordion">
+                            <div class="alert alert-warning">
+                                <p class="mb-3 texto-negrito lead">Sinto muito que você esteja assim. Lembre-se: dias ruins são temporários. Você é mais forte do que pensa! ❤️</p>
+                                <a href="https://youtu.be/Ftznd6yy1t4" target="_blank" class="btn btn-warning texto-negrito">
+                                    Livro recomendado: "Mais Rápido e Melhor"
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="collapse" id="ansioso" data-bs-parent="#humorAccordion">
+                            <div class="alert alert-warning">
+                                <p class="mb-3 texto-negrito lead">Respire fundo. Você não está sozinho(a). Vamos focar no que você pode controlar agora. 🧘‍♂️</p>
+                                <a href="https://go.hotmart.com/K99560128C" target="_blank" class="btn btn-warning texto-negrito">
+                                    Curso: "Método FocusFlow"
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="collapse" id="desmotivado" data-bs-parent="#humorAccordion">
+                            <div class="alert alert-warning">
+                                <p class="mb-3 texto-negrito lead">Falta de motivação acontece. Mas uma pequena ação hoje pode mudar tudo amanhã. Vamos lá! 🚀</p>
+                                <a href="https://amzn.to/4iOhc7c" target="_blank" class="btn btn-warning texto-negrito">
+                                    Livro: "TDAH Como Lidar"
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="caixa">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="img/ferramentas.jpg" alt="Facil de Usar">
+                        <h4 class="text-center texto-negrito mb-3">Jogos de Foco</h4>
+                        <p class="text-justify">Transforme tarefas em desafios cronometrados com recompensas. <a class="texto-negrito" href="https://go.hotmart.com/O99286114T" target="_blank">Experimente nosso kit de gamificação</a> com métodos reais.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="img/produtividade-lampada1.jpg" alt="economize">
+                        <h4 class="text-center texto-negrito mb-3">Ancoragem visual</h4>
+                        <p class="text-justify">Nosso <a class="texto-negrito"  href="https://go.hotmart.com/L99286133V?dp=1" target="_blank">workshop de mapeamento criativo</a> ensina a organizar ideias com cores e mapas mentais antes de executar.</p>
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="img/alimentos-mulher.jpg" alt="Mulher">
+                        <h4 class="text-center texto-negrito mb-3">Ciclo de energia</h4>
+                        <p class="text-justify">O <a class="texto-negrito"  href="https://amzn.to/3GfAk0h" target="_blank">In-Energy+</a> ajuda a identificar seus picos criativos naturais com base em dados reais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="caixa">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex">
+                        <div class="align-self-center">
+                            <h2 class="display-5">Estratégias <span class="text-warning texto-negrito">InnerFoco</span> para Mentes Criativas</h2>
+                            <p>Técnicas testadas por criativos como você, focadas em desbloquear o potencial máximo da sua mente. Aqui você vai encontrar métodos de organização mental, práticas de foco profundo, hacks de produtividade e abordagens para transformar ideias soltas em projetos reais. Tudo isso com leveza, autenticidade e espaço para explorar sua individualidade.  <a class="btn btn-warning mt-3 texto-negrito" href="blog.html">Veja mais</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="img/administrador.jpg" alt="Saiba">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <img src="img/produtividade.jpg" class="img-fluid rounded" alt="Métodos Científicos">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="mb-4 display-6">Baseado em <span class="text-warning texto-negrito">ciência</span></h2>
+                        <div class="d-flex mb-3">
+                            <div class="me-4 text-warning">
+                                <i class="fas fa-brain fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5>Neuroplasticidade</h5>
+                                <p>Técnicas que estimulam a criação de novas conexões neurais para melhorar o foco.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="me-4 text-warning">
+                                <i class="fas fa-clock fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5>Ritmos Ultradianos</h5>
+                                <p>Respeite seus ciclos naturais de energia para máxima produtividade.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="me-4 text-warning">
+                                <i class="fas fa-chart-line fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5>Flow State</h5>
+                                <p>Métodos para alcançar o estado de fluxo onde a criatividade flui naturalmente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 bg-warning text-white">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mb-4 display-6">Receba dicas semanais <span class="text-dark texto-negrito">exclusivas</span></h2>
+                        <p class="lead mb-4 text-dark">Inscreva-se para receber estratégias comprovadas diretamente no seu e-mail</p>
+                        <form class="row g-3 justify-content-center">
+                            <div class="col-md-8">
+                                <input type="email" class="form-control form-control-lg" placeholder="Seu melhor e-mail">
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-dark btn-lg w-100 texto-negrito">Quero receber</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="caixa bg-light py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <img src="img/rapaz-olhos-fechado.jpg" class="img-fluid rounded" alt="Ambiente Produtivo">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="text-dark display-5 texto-negrito">Seu Ambiente Influencia seu Foco</h2>
+                        <p>Um ambiente desorganizado pode ser inimigo da sua produtividade. Comece pequeno: elimine distrações visuais, defina um espaço fixo de trabalho e adicione elementos que estimulem a concentração, como plantas, iluminação suave e som ambiente neutro.</p>
+                        <h2 class="text-dark display-5 texto-negrito">Rituais de Início e Fim</h2>
+                        <p>Estabelecer rituais simples no início e no final do seu expediente pode treinar sua mente a entrar e sair do modo foco. Algo tão básico quanto preparar uma xícara de chá ou escrever três metas do dia já faz diferença.</p>
+                        <p>Ao encerrar o dia, anotar brevemente o que foi feito e o que ficará para amanhã ajuda a aliviar a ansiedade e dá clareza para recomeçar no dia seguinte com mais direção.</p>
+                        <h2 class="text-dark display-5 texto-negrito">Controle de Estímulos Digitais</h2>
+                        <p>Seu foco pode estar sendo drenado por notificações, redes sociais e a tentação constante de checar o celular. Pequenas mudanças como silenciar alertas, agrupar aplicativos por prioridade e usar extensões bloqueadoras já criam um ambiente mais propício à concentração.</p>
+                        <p>Mas além das ferramentas, é preciso reprogramar sua mentalidade. É aqui que entra o livro <strong>“Mindset”</strong>, de Carol S. Dweck — uma leitura transformadora que mostra como a forma como você enxerga seus desafios pode ser o divisor de águas entre o progresso e a estagnação.</p>
+                        <p>Se você quer fortalecer sua autodisciplina e desenvolver um foco mais sustentável, essa leitura é um ótimo ponto de partida. <a href="https://amzn.to/4iNEgTy" target="_blank" class="btn btn-outline-warning btn-lg mt-1 texto-negrito">Conheça o livro</a></p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="caixa py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 order-md-2 mb-4 mb-md-0">
+                        <img src="img/lampada.jpg" class="img-fluid rounded" alt="Rotina Inteligente">
+                    </div>
+                    <div class="col-md-6 order-md-1 d-flex">
+                        <div class="align-self-center">
+                            <h2 class="text-warning display-5 texto-negrito">Rotina Inteligente, Resultado Duradouro</h2>
+                            <p class="lead">Uma rotina eficiente não precisa ser rígida, mas sim estratégica. Ao dividir o dia em blocos de alta concentração e pausas conscientes, você potencializa sua produtividade sem comprometer sua saúde mental.</p>
+                            <p>Esse conceito é aprofundado no livro <strong>“Deep Work”</strong>, de Cal Newport — uma leitura essencial para quem quer ir além da superficialidade e alcançar resultados com foco real. Ele mostra como o trabalho profundo é a chave para se destacar em um mundo cheio de distrações.</p>
+                            <p>Quer entender como aplicar isso na prática? <a href="https://amzn.to/430zTOO" target="_blank" class="btn btn-outline-warning btn-lg texto-negrito">Conheça o livro</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-warning text-dark pt-5 pb-4" id="contato">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-inline-block mb-3">
+                        <img src="img/InnerFoco-logo-Sem-Fundo.png" alt="InnerFoco" width="100" class="img-fluid" loading="lazy">
+                    </div>
+                    <p class="text-dark lead mb-3 fw-bold">Foco Explosivo para Mentes Criativas</p>
+                    
+                    <div class="mb-4">
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="https://www.instagram.com/innerfoco/" target="_blank" class="text-dark fs-4"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank" class="text-dark fs-4"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.youtube.com/@InnerFoco" target="_blank" class="text-dark fs-4"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.tiktok.com/@innerfoco?_t=ZM-8w4wGDwFtqx&_r=1" target="_blank" class="text-dark fs-4"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="#" target="_blank" class="text-dark fs-4"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" target="_blank" class="text-dark fs-4"><i class="fab fa-twitter"></i></a>
+                            <a href="#" target="_blank" class="text-dark fs-4"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <a href="index.html" class="text-dark text-decoration-underline fw-semibold">Início</a>
+                        <a href="sobre.html" class="text-dark text-decoration-underline fw-semibold">Sobre</a>
+                        <a href="blog.html" class="text-dark text-decoration-underline fw-semibold">Blog</a>
+                        <a href="produtos.html" class="text-dark text-decoration-underline fw-semibold">Produtos</a>
+                        
+                        <div class="dropdown">
+                            <a class="text-dark text-decoration-underline fw-semibold dropdown-toggle" href="#" role="button" id="dropdownIndicacoes" data-bs-toggle="dropdown" aria-expanded="false">
+                                Indicações
+                            </a>
+                            <ul class="dropdown-menu bg-warning border-dark" aria-labelledby="dropdownIndicacoes">
+                                <li><a class="dropdown-item text-dark" href="https://go.hotmart.com/K99560128C" target="_blank">Método FocusFlow</a></li>
+                                <li><a class="dropdown-item text-dark" href="https://go.hotmart.com/R64921265L" target="_blank">Fórmula negócio online</a></li>
+                                <li><a class="dropdown-item text-dark" href="https://go.hotmart.com/D99286293H" target="_blank">Desafio de produtividade</a></li>
+                                <li><a class="dropdown-item text-dark" href="https://d-tomasi.hotmart.host/homemdacasa?ref=B99285417T" target="_blank">Domine a Vida Adulta</a></li>
+                                <li><a class="dropdown-item text-dark" href="https://go.hotmart.com/E69369711F" target="_blank">Inglês com a Gringa</a></li>
+                                <li><a class="dropdown-item text-dark" href="https://go.hotmart.com/X99518938A?dp=1" target="_blank">Adubação Produtiva</a></li>
+                                <li><a class="dropdown-item text-dark" href="https://go.hotmart.com/C99387265S" target="_blank">Alcateia Evolutiva</a></li>
+                                <li><a class="dropdown-item text-dark" href="https://go.hotmart.com/H99387236T" target="_blank">Método R & T</a></li>
+                                <li><a class="dropdown-item text-dark" href="https://go.hotmart.com/Y99286189F" target="_blank">Secando em casa</a></li>
+                                <li><a class="dropdown-item text-dark" href="https://go.hotmart.com/G99560608C" target="_blank">Prosperidade e vida</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="dropdown">
+                            <a class="text-dark text-decoration-underline fw-semibold dropdown-toggle" href="#" role="button" id="dropdownEbooks" data-bs-toggle="dropdown" aria-expanded="false">
+                                E-books
+                            </a>
+                            <ul class="dropdown-menu bg-warning border-dark" aria-labelledby="dropdownEbooks">
+                                <li><a class="dropdown-item text-dark" href="https://amzn.to/44XEzrt" target="_blank">Mais rápido e melhor</a></li>
+                                <li><a class="dropdown-item text-dark" href="https://amzn.to/4iOhc7c" target="_blank">TDAH como lidar</a></li>
+                                <li><a class="dropdown-item text-dark" href="https://amzn.to/4iS9lWb" target="_blank">O poder do hábito</a></li>
+                                <li><a class="dropdown-item text-dark" href="https://amzn.to/42H9EOF" target="_blank">Mentes inquietas</a></li>
+                                <li><a class="dropdown-item text-dark" href="https://amzn.to/3ROeUde" target="_blank">O milagre da manhã</a></li>
+                                <li><a class="dropdown-item text-dark" href="https://amzn.to/4d2zoZq" target="_blank">Hábitos atômicos</a></li>
+                                <li><a class="dropdown-item text-dark" href="https://amzn.to/4d10z6R" target="_blank">Vencendo o TDAH adulto</a></li>
+                                <li><a class="dropdown-item text-dark" href="https://amzn.to/430zTOO" target="_blank">Deep Work</a></li>
+                                <li><a class="dropdown-item text-dark" href="https://amzn.to/4iNEgTy" target="_blank">Mindset</a></li>
+                                <li><a class="dropdown-item text-dark" href="https://amzn.to/4k0fhx5" target="_blank">Destrave sua vida</a></li>
+                            </ul>
+                        </div>
+                        <a href="ferramentas.html" class="text-dark text-decoration-underline fw-semibold">Ferramentas</a>
+                        <a href="contato.html" class="text-dark text-decoration-underline fw-semibold">Contato</a>
+                    </div>
+                </div>
+                <div class="col-lg-8 bg-dark border-warning">
+                    <h4 class="text-light mb-4 fw-bold">Fale Conosco</h4>
+                    <form id="form-contato" action="https://formsubmit.co/innerfoco@gmail.com" method="POST">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="Novo contato do site">
+                        
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" name="name" placeholder="Seu nome" class="form-control bg-light text-dark border-dark" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" name="email" placeholder="Seu e-mail" class="form-control bg-light text-dark border-dark" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="tel" name="whatsapp" placeholder="Seu WhatsApp" class="form-control bg-light text-dark border-dark" required>
+                            </div>
+                            <div class="col-12">
+                                <textarea name="message" placeholder="Sua mensagem" rows="3" class="form-control bg-light text-dark border-dark" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-warning fw-bold mt-1 mb-3">Enviar Mensagem</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <hr class="border-dark my-4">
+            <div class="text-center mb-3">
+                <a href="politica-de-privacidade.md" class="text-dark text-decoration-underline me-3 fw-semibold">Política de Privacidade</a>|
+                <a href="termos-de-uso.md" class="text-dark text-decoration-underline me-3 fw-semibold">Termos de Uso</a>|
+                <a href="politica-de-seguranca.md" class="text-dark text-decoration-underline me-3 fw-semibold">Política de Segurança</a>|
+                <a href="politica-de-cookies.md" class="text-dark text-decoration-underline fw-semibold">Política de Cookies</a>
+            </div>
+            
+            <div class="text-center">
+                <p class="small text-dark mb-0 fw-semibold">&copy; 2025 InnerFoco. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    
+</body>
+</html>
